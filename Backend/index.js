@@ -43,4 +43,6 @@ const storage = multer.diskStorage({
 
 const upload = multer({storage: storage});
 
-//Creating 
+app.post('/upload', upload.single('product'), (req, res)=>{
+
+});
